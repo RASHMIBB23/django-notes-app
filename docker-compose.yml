@@ -35,7 +35,7 @@ services:
     networks:
       - notes-app-nw
 
-  db_cout:
+  db:
     image: mysql
     container_name: "db_cont"
     environment:
@@ -50,7 +50,7 @@ services:
       retries: 5
       start_period: 60s
     networks:
-      - notes-app-nw
+      - notes-app-nwcd djang
 
 networks:
   notes-app-nw:
