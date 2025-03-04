@@ -35,7 +35,7 @@ services:
     networks:
       - notes-app-nw
 
-  db:
+  db_cout:
     image: mysql
     container_name: "db_cont"
     environment:
